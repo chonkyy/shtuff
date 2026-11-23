@@ -1,8 +1,8 @@
 :root {
-  --bg: #f7f5f0;
+  --bg: #fff;
   --text: #1d1d1f;
   --muted: #86868b;
-  --tile: #ebe8e1;
+  --tile: #eee;
   --select: #0a64d6;
 }
 
@@ -58,36 +58,9 @@ h1 span {
   width: auto;
 }
 
-/* Plain text link: [About] */
+/* About is a plain browser button: default box, Inter text. */
 .about-btn {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0;
-  border: none;
-  background: none;
-  color: var(--text);
   font: inherit;
-  cursor: pointer;
-}
-
-/* Invisible bold copy reserves the bold width so hovering doesn't shift the text. */
-.about-btn::after {
-  content: attr(data-label);
-  height: 0;
-  overflow: hidden;
-  visibility: hidden;
-  font-weight: 700;
-}
-
-.about-btn:hover,
-.about-btn:focus-visible {
-  color:#672326;
-  text-underline-offset: 3px;
-}
-
-.about-btn:focus:not(:focus-visible) {
-  outline: none;
 }
 
 /* About overlay */
@@ -106,7 +79,7 @@ h1 span {
 }
 
 .about::backdrop {
-  background: rgba(30, 28, 25, 0.35);
+  background: rgba(0, 0, 0, 0.35);
   backdrop-filter: blur(4px);
 }
 
@@ -238,7 +211,7 @@ h1 span {
 }
 
 .preview::backdrop {
-  background: rgba(30, 28, 25, 0.35);
+  background: rgba(0, 0, 0, 0.35);
   backdrop-filter: blur(4px);
 }
 
